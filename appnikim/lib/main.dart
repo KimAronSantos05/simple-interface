@@ -16,53 +16,113 @@ class MyApp extends StatelessWidget{
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
+          children: [
+            CircleAvatar(
+              radius: 75,
+              backgroundColor: Colors.deepPurple,
+            child: 
               Icon(
                 Icons.person, 
-                color: Colors.purple, 
+                color: Colors.white, 
                 size: 145.0,
               ),
+            ),
+
+
               Text(
                  'Kim Aron C. Santos', 
                  style: TextStyle(
                   fontSize: 21,
                   color: Colors.black,
+                  fontWeight: FontWeight.bold,
                  )
                   ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                   children: [
-                    Icon(
-                        Icons.home,
-                        color: Colors.purple,
-                    ),
-                    Text ('Home'),
 
-                    Icon(
-                        Icons.book,
-                        color: Colors.purple,
-                    ),
-                    Text ('Home'),
-
-                     Icon(
-                        Icons.person,
-                        color: Colors.purple,
-                    ),
-                    Text ('Home'),
-                    ],
-                ),
-              Text(
+                 Text(
                  'Bachelor of Science in Information Technology',
                  style: TextStyle (
                   color: Colors.grey,
                  )
                  
               ),
-            ]
+
+              SizedBox(
+                height: 200,
+              ),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                   children: [
+                    Column(
+                      children: [
+                    Icon(
+                        Icons.home_outlined,
+                        size: 30,
+                        color: Colors.deepPurple,
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Text ('Home'),
+                    ],
+                    ),
+
+                    SizedBox(
+                      width: 50,
+                    ),
+
+                    Column(
+                      children: [
+                    Icon(
+                        Icons.menu_book_rounded,
+                        size: 30,
+                        color: Colors.deepPurple,
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Text ('Courses'),
+                    ],
+                    ),
+
+                    SizedBox(
+                      width: 50,
+                    ),
+                    
+                    Column(
+                      children: [
+                     Icon(
+                        Icons.person_outline,
+                        size: 30,
+                        color: Colors.deepPurple,
+                    ),
+                    SizedBox(
+                      height: 4,
+                    ),
+                    Text ('Profile'),
+                    ],
+                ),
+                
+                   ],
+                ),
+
+                SizedBox(
+                  height: 200,
+                ),
+             
+             Text(
+              'Copyright 2024 Kim Aron C. Santos',
+              style: TextStyle(
+                color: Colors.grey,
+                fontSize: 12,
+              )
+             )
+  
+
+          ],  
           ),
         ),
       ),
     );
   }
 }
- 
